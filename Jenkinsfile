@@ -6,7 +6,7 @@ pipeline{
     }
     stages{
         stage('calling function'){
-            step{
+            steps{
                 script{
                     testfun.groovy('${REPO_PATH}','${APP_NAME}')
                 }
