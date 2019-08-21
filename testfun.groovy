@@ -1,5 +1,4 @@
 #!/usr/bin/env groovy
-import hudson.model.*
 def call(REPO_PATH,APP_NAME){
     stages{
         stage('build and deploy'){
