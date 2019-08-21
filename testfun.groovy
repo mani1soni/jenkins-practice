@@ -1,4 +1,4 @@
-!#groovy
+#!groovy
 def call(REPO_PATH,APP_NAME){
     stages{
         stage('build and deploy'){
