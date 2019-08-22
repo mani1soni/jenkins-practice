@@ -1,4 +1,4 @@
-library identifier: 'testfun.groovy', retriever: legacySCM()
+library identifier: 'testfun.groovy@1.0', retriever: legacySCM()
 //def myfun = load 'testfun.groovy'
 pipeline{
     agent any
