@@ -9,7 +9,7 @@ pipeline{
         stage('calling function'){
             steps{
                 script{
-                    myfun('${REPO_PATH}','${APP_NAME}')
+                    myfun.test('${REPO_PATH}','${APP_NAME}')
                 }
             }
         }
