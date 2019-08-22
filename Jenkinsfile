@@ -1,5 +1,4 @@
-library identifier: 'testfun.groovy@1.0', retriever: legacySCM()
-//def myfun = load 'testfun.groovy'
+Map modules = [:]
 pipeline{
     agent any
     environment{
@@ -10,7 +9,8 @@ pipeline{
         stage('calling function'){
             steps{
                 script{
-                    testfun.groovy('${REPO_PATH}','${APP_NAME}')
+                    modules.test = load "testfun.groovy"
+                    modules.test('${REPO_PATH}','${APP_NAME}')
                 }
             }
         }
