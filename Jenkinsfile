@@ -1,4 +1,4 @@
-def myfun = load("testfun.groovy")
+def myfun = load 'testfun.groovy'
 pipeline{
     agent any
     environment{
