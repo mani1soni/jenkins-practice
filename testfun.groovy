@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-def test(REPO_PATH,APP_NAME){
+def call(REPO_PATH,APP_NAME){
     stages{
         stage('build and deploy'){
             steps{

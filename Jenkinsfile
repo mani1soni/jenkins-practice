@@ -1,4 +1,6 @@
-def myfun = load 'testfun.groovy'
+node{
+    def myfun = load 'testfun.groovy'
+}
 pipeline{
     agent any
     environment{
@@ -9,7 +11,7 @@ pipeline{
         stage('calling function'){
             steps{
                 script{
-                    myfun.test('${REPO_PATH}','${APP_NAME}')
+                    myfun('${REPO_PATH}','${APP_NAME}')
                 }
             }
         }
