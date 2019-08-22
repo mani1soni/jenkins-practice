@@ -3,7 +3,7 @@ def call(def path,def app){
     stages{
         stage('build and deploy'){
             steps{
-                sh '''
+                sh''' 
                 cd ${path}/${app}/
                 mkdir testing
                 '''
