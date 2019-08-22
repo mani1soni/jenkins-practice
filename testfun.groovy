@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
-def call(def REPO_PATH,def APP_NAME){
+def call(def path,def app){
     stages{
         stage('build and deploy'){
             steps{
                 sh '''
-                cd REPO_PATH/APP_NAME/
+                cd ${path}/${app}/
                 mkdir testing
                 '''
             }
