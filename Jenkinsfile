@@ -10,7 +10,7 @@ pipeline{
             steps{
                 script{
                     modules.test = load "testfun.groovy"
-                    test('${REPO_PATH}','${APP_NAME}')
+                    modules.test('${REPO_PATH}','${APP_NAME}')
                 }
             }
         }
