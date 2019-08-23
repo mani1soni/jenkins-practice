@@ -1,8 +1,7 @@
 #!/usr/bin/env groovy
 def call(def path,def app){
-    stages{
+    return{
         stage('build and deploy'){
-            steps{
                 sh''' 
                 cd ${path}/${app}/
                 mkdir testing
@@ -10,5 +9,4 @@ def call(def path,def app){
             }
         }
     }
-    return this
 }
