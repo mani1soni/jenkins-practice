@@ -1,5 +1,5 @@
 //Map modules = [:]
-def myfun = load "testfun.groovy"
+library identifier: 'genric.groovy@1.0', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', remote: 'https://github.com/mani1soni/jenkins-practice.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
 pipeline{
     agent any
     environment{
@@ -10,7 +10,8 @@ pipeline{
         stage('calling function'){
             steps{
                 script{
-                    myfun('${REPO_PATH}', '${APP_ANME}')
+                    genric()
+
                     //modules.test = load "testfun.groovy"
                     //modules.test('${REPO_PATH}','${APP_NAME}')
                 }
