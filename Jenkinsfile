@@ -12,12 +12,13 @@ pipeline{
         stage('calling function'){
             steps{
                 genric()
-                //script{
-                 //   genric()
-                    //modules.test = load "genric.groovy"
-                    //modules.test()
-                //}
             }
         }
     }
 }
+
+//script{
+     //   genric()
+    //modules.test = load "genric.groovy"
+    //modules.test()
+    //}
