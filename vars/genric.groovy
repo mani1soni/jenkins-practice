@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-import hudson.model.*
+//import hudson.model.*
 pipeline{
     agent any
     stages{

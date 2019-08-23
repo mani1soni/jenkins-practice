@@ -11,7 +11,7 @@ pipeline{
     stages{
         stage('calling function'){
             steps{
-                genric()
+                genric{}
             }
         }
     }
