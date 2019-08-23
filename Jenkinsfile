@@ -1,4 +1,5 @@
-Map modules = [:]
+//Map modules = [:]
+def myfun = load "testfun.groovy"
 pipeline{
     agent any
     environment{
@@ -9,8 +10,9 @@ pipeline{
         stage('calling function'){
             steps{
                 script{
-                    modules.test = load "testfun.groovy"
-                    modules.test('${REPO_PATH}','${APP_NAME}')
+                    myfun('${REPO_PATH}', '${APP_ANME}')
+                    //modules.test = load "testfun.groovy"
+                    //modules.test('${REPO_PATH}','${APP_NAME}')
                 }
             }
         }
