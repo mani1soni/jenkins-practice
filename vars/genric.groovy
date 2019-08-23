@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-//import hudson.model.*
+import net.courtanet.jenkins.Utils
 pipeline{
     agent any
     stages{
