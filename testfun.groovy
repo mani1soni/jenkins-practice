@@ -10,5 +10,5 @@ def call(def path,def app){
             }
         }
     }
-    return this
+    return this.&call
 }
