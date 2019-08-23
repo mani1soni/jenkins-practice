@@ -1,5 +1,5 @@
-Map modules = [:]
-//library identifier: 'genric.groovy@master', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', remote: 'https://github.com/mani1soni/jenkins-practice.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
+//Map modules = [:]
+library identifier: 'genric.groovy@master', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', remote: 'https://github.com/mani1soni/jenkins-practice.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
 //@Library('genric.groovy')
 //def myfun = load 'genric.groovy'
 pipeline{
@@ -12,8 +12,8 @@ pipeline{
         stage('calling function'){
             steps{
                 script{
-                    modules.test = load "genric.groovy"
-                    modules.test()
+                    //modules.test = load "genric.groovy"
+                    //modules.test()
                 }
             }
         }
