@@ -11,9 +11,7 @@ pipeline{
     stages{
         stage('calling function'){
             steps{
-                script{
-                    genric().wait(long)
-                }
+                genric()
             }
         }
     }
