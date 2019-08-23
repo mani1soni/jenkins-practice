@@ -12,7 +12,6 @@ pipeline{
         stage('calling function'){
             steps{
                 script{
-                    myfun()
                     modules.test = load "genric.groovy"
                     modules.test()
                 }
