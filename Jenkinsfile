@@ -7,7 +7,7 @@ def myfun = load 'docker.groovy'
      stages{
           stage('calling function'){
                steps{
-                    docker('test','ubuntu')
+                    myfun('test','ubuntu')
                }
          }
      }
