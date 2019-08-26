@@ -16,7 +16,7 @@ library identifier: 'genric.groovy@master', retriever: modernSCM([$class: 'GitSC
 //         }
 //     }
 //}
-genric('test')
+genric()
 //script{
      //   genric()
     //modules.test = load "genric.groovy"
