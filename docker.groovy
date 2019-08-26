@@ -10,6 +10,7 @@ class docker {
        echo 'hello'
    }
 }
+return new docker();
 
 
 
