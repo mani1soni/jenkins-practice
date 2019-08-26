@@ -7,7 +7,7 @@ def call(appname){
                 steps{
                     sh''' 
                     cd /home/manish/Desktop/${appname}/
-                    mkdir testing
+                    sudo mkdir testing
                     '''
                 }
             }
