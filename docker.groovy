@@ -6,7 +6,7 @@
 //return this
 
 class docker {
-    static def first(){
+    def first(){
        echo 'hello'
    }
 }
