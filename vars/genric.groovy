@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-def call(appname){
+def call(def appname){
     pipeline{
         agent any
         stages{
