@@ -10,7 +10,7 @@ pipeline{
                     script{
                          //docker.first()
                          modules.test = load "docker.groovy"
-                         modules.test.call()
+                         modules.test()
                     }
                }
          }

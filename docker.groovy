@@ -2,7 +2,7 @@
 def call(){
    echo 'hello'
 }
-return this
+return this.&call()
 
 //class docker {
   //  def first(){
