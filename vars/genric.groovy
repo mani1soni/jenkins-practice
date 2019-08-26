@@ -7,7 +7,7 @@ def call(appname){
                 steps{
                     sh''' 
                     cd /home/manish/Desktop/${appname}/
-                    touch hi
+                    bash hello.sh
                     '''
                 }
             }
