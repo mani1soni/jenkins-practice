@@ -1,16 +1,15 @@
 #!/usr/bin/env groovy
-
-//def call(){
- //   echo 'hello'
-//}
-//return this
-
-class docker {
-    def first(){
-       echo 'hello'
-   }
+def call(){
+   echo 'hello'
 }
-return new docker();
+return this
+
+//class docker {
+  //  def first(){
+    //   echo 'hello'
+   //}
+//}
+//return new docker();
 
 
 
