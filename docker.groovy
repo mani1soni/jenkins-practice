@@ -1,3 +1,7 @@
-def call(){
-    echo 'hello'   
+#!/usr/bin/env groovy
+class call(){
+    def call(){
+    echo 'hello'
+    }
 }
+
