@@ -1,8 +1,9 @@
 #!/usr/bin/env groovy
-def call(){
-
-    echo 'hello'
+class docker {
+    def first(){
+        echo 'hello'
+    }
 }
-return this
+
 
 
