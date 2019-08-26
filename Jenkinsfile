@@ -11,7 +11,7 @@ pipeline{
           stage('calling function'){
                steps{
                     script{
-                         docker.first()
+                         docker()
                          //modules.test = load "docker.groovy"
                          //modules.test()
                     }
