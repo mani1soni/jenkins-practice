@@ -1,12 +1,12 @@
 #!/usr/bin/env groovy
-def call(def appname){
+def call(appname){
     pipeline{
         agent any
         stages{
             stage('build-deploy'){
                 steps{
                     sh''' 
-                    cd /home/manish/Desktop/${appname}/
+                    cd /home/manish/Desktop/test/
                     bash hello.sh
                     '''
                 }
