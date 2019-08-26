@@ -6,7 +6,7 @@ def call(appname){
             stage('build-deploy'){
                 steps{
                     sh''' 
-                    cd /home/manish/Desktop/'${appname}'/
+                    cd /home/manish/Desktop/${appname}/
                     bash hello.sh
                     '''
                 }
