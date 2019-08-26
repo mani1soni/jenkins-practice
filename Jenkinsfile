@@ -9,7 +9,7 @@ Map modules = [:]
                steps{
                     script{
                          modules.test = load 'docker.groovy'
-                         modules.test('test','ubuntu')
+                         modules.test()
                     }
                }
          }
