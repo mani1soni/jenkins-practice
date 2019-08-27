@@ -10,7 +10,7 @@ pipeline{
                steps{
                     script{
                          def docker = load 'docker.groovy' 
-                         docker()
+                         docker('test','ubuntu' )
                          //modules.test = load "docker.groovy"
                          //modules.test
                     }
