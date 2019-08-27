@@ -8,7 +8,9 @@ pipeline{
      stages{
           stage('calling function'){
                steps{
-                    docker('test1','ubuntu' )     
+                    script{
+                         docker('test1','ubuntu' )    
+                    } 
                }
          }
      }
