@@ -9,7 +9,7 @@ pipeline{
           stage('calling function'){
                steps{
                     script{
-                         docker('test1','ubuntu')   
+                         docker   
                     } 
                }
          }
