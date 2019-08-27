@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "manish"
+echo "$1"
