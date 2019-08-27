@@ -2,7 +2,7 @@
 def call(){
    sh 'sudo docker run -itd --name test ubuntu'
 }
-return this.&call()
+return this
 
 //class docker {
   //  def first(){
