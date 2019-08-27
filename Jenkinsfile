@@ -1,5 +1,5 @@
 //Map modules = [:]
-//library identifier: 'docker.groovy@master', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', remote: 'https://github.com/mani1soni/my-shared-library.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
+library identifier: 'my-shared-library@master', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', remote: 'https://github.com/mani1soni/my-shared-library.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
 //@Library('genric.groovy')
 
 //def docker = load 'docker.groovy' 
@@ -10,7 +10,7 @@ pipeline{
                steps{
                     script{
                          def docker = load 'docker.groovy' 
-                         docker('test','ubuntu' )
+                         docker('test1','ubuntu' )
                          //modules.test = load "docker.groovy"
                          //modules.test
                     }
