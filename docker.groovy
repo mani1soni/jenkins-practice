@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 def call(){
-   sh 'docker run -itd --name test ubuntu'
+   sh 'sudo docker run -itd --name test ubuntu'
 }
 return this.&call()
 
