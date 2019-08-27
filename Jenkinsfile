@@ -8,8 +8,7 @@ pipeline{
           stage('calling function'){
                steps{
                     script{
-                         def docker = load 'docker.groovy'
-                         docker()
+                         my-shared-library.docker()
                     } 
                }
          }
