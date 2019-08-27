@@ -11,9 +11,6 @@ pipeline{
                }
           }
      }
-     script{
-          notification()
-     }
 }
 //genric()
 //script{
