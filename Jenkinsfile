@@ -4,12 +4,12 @@ library identifier: 'my-shared-library@master', retriever: modernSCM([$class: 'G
 
 //def docker = load 'docker.groovy' 
 pipeline{
-     agent any
+     agent any     
      stages{
           stage('calling function'){
                steps{
                     script{
-                         docker('test1','ubuntu' )    
+                         docker('test1','ubuntu')   
                     } 
                }
          }
