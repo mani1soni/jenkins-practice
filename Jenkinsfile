@@ -7,7 +7,7 @@ pipeline{
      stages{
           stage('calling function'){
                steps{
-                    test('test','ubuntu')
+                    deploy('test','ubuntu')
                }
          }
      }
