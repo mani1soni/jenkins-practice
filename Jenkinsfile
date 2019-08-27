@@ -9,7 +9,7 @@ pipeline{
           stage('calling function'){
                steps{
                     script{
-                         docker.groovy()
+                         docker.groovy
                     } 
                }
          }
