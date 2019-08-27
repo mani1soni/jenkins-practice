@@ -10,8 +10,12 @@ pipeline{
                     test('test','ubuntu')
                     
                }
-          notification()
-         }
+          }
+          stage('notification'){
+               steps{
+                    notification()
+               }
+          }
      }
 }
 //genric()
