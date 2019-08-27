@@ -8,7 +8,7 @@ pipeline{
           stage('calling function'){
                steps{
                     script{
-                         docker()
+                         docker
                     } 
                }
          }
