@@ -8,7 +8,8 @@ pipeline{
           stage('calling function'){
                steps{
                     script{
-                         my-shared-library@master.docker()
+                         def myfun = load 'my-shared-library'
+                         myfun.docker()
                     } 
                }
          }
