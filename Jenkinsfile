@@ -8,8 +8,9 @@ pipeline{
           stage('calling function'){
                steps{
                     test('test','ubuntu')
-                    notification()
+                    
                }
+          notification()
          }
      }
 }
