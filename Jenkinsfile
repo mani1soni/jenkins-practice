@@ -8,12 +8,7 @@ pipeline{
      stages{
           stage('calling function'){
                steps{
-                    script{
-                         def docker = load 'docker.groovy' 
-                         docker('test1','ubuntu' )
-                         //modules.test = load "docker.groovy"
-                         //modules.test
-                    }
+                    docker('test1','ubuntu' )     
                }
          }
      }
@@ -21,8 +16,8 @@ pipeline{
 //genric()
 //script{
      //   genric()
-    //modules.test = load "genric.groovy"
-    //modules.test()
+    //modules.test = load "docker.groovy"
+    //modules.test
     //}
 
 
