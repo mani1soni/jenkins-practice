@@ -7,7 +7,9 @@ pipeline{
      stages{
           stage('calling function'){
                steps{
-                    scriptfun('manish')    
+                    scriptfun('manish')
+                    build('ubuntu')
+                    test('test','ubuntu')    
                }
           }
      }
